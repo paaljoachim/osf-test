@@ -26,6 +26,8 @@ function beans_child_enqueue_assets() {
 
 /*------ CUSTOM CODE for OSF test theme -----*/
 
+// Add support for editor stylesheet - using twenty Sixteens editor stylesheet.
+add_editor_style( 'editor-style.css' );
 
 // Remove site description
 beans_remove_action( 'beans_site_title_tag' );
@@ -323,10 +325,6 @@ function bigger_embed_size()
 { 
  return array( 'width' => 910, 'height' => 590 );
 }
-
-
-// Add support for editor stylesheet - using twenty Sixteens editor stylesheet.
-add_editor_style( 'assets/css/editor-style.css' );
 
 
 /* --------- Bottom of backend Admin screen -  Custom admin footer credits https://github.com/gregreindel/greg_html5_starter -----*/
