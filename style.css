@@ -1,0 +1,288 @@
+/*
+Theme Name: Beans osf test
+Description: Starter Child Theme for the Beans Theme.
+Author: Beans
+Author URI: http://www.getbeans.io
+Template: tm-beans
+Version: 1.0.0
+Text Domain: tm-beans
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+/* Added body tag for sticky footer */
+html, body {
+	font: normal 18px / 20px sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	background-color: rgba(61, 56, 56, 0.85);
+	
+	/* Sticky Footer */
+	margin:0;
+	padding:0;
+	height: 98%;
+	line-height: 1.4em;
+}
+
+
+/*html,body .home{
+	/*background-color: #025c81; /* #5e5e66*!/*!/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#112056+0,2f3d54+100&0.8+0,0.8+100 *!/
+	background: -moz-linear-gradient(top, rgba(17,32,86,0.9) 0%, rgba(47,61,84,0.8) 100%); /* FF3.6-15 *!/
+	background: -webkit-linear-gradient(top, rgba(17,32,86,0.9) 0%,rgba(47,61,84,0.8) 100%); /* Chrome10-25,Safari5.1-6 *!/
+	background: linear-gradient(to bottom, rgba(17,32,86,0.9) 0%,rgba(47,61,84,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc112056', endColorstr='#cc2f3d54',GradientType=0 ); /* IE6-9 *!/
+}*/
+
+
+/*----------------------
+TOP SECTION
+-------------*/
+
+/* Logo */
+.tm-site-branding, .tm-site-branding a {
+    color: #f99b1c;
+    text-decoration: none;
+	font-size: 100px;
+    font-weight: 500;
+    font-family: trebuchet ms, serif;
+    text-shadow: -3px -3px 2px #ffffff;
+}
+
+/* Header and uk block */
+.tm-header.uk-block {
+	background-color: #665e5e;
+	height: 70px;
+	z-index: 10;
+	padding: 33px 0 0 0;
+	border-bottom: 2px solid #333;
+}
+
+/* Sticky Header - https://community.getbeans.io/discussion/enable-a-sticky-header/ */
+header.uk-active {
+ /* REMOVE COMMENT background-color: #fff; */
+ padding-top: 25px;
+ padding-bottom: 20px;
+ border-bottom: 1px solid #ccc;
+ 
+ height: 60px !important;
+ opacity: 0.9;
+}
+
+/*------- 
+TOP MENU 
+-------*/
+
+/* Search */
+.tm-search input[type="search"] {
+	border-radius: 10px;
+	padding: 5px 15px;
+	height: 32px;
+}
+
+/* Top menu */
+.tm-primary-menu {
+	margin: -15px 0 0 40px !important;
+}
+
+/*.tm-primary-menu a:hover{
+	color: #fff !important;
+	background-color: #665e5e !important;
+}
+*/
+
+.tm-primary-menu .current-menu-item a {
+	color: #fff !important;
+	background-color: #665e5e !important;
+}
+
+/* I had to remove the background rectangle box that showed up when clicking the links. I inserted the background color of the menu to remove it. */
+.uk-navbar-nav > li > a:active,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li > a {
+    background-color: rgba(102, 94, 94, 0) !important;
+    color: #fff;
+}
+
+
+
+
+
+/*  Covers the full site except the copyright info on the bottom */
+.tm-site {
+	min-height: 100%;	/* Sticky code */
+	position: relative; /* Sticky code */
+	background-color: #fff;
+}
+
+/* Home page */
+.home .tm-site {
+	background-color: #000;
+}
+
+
+
+
+/* body/content for sticky footer */
+.tm-main {
+	padding-top: 20px;
+	padding-bottom: 80px;   
+}
+
+/* top half of page - Home page */
+.home .tm-main {
+	/* background-color: #000; */
+	
+	background: #000 url('images/Blue-bubbles.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	background-size: cover;
+	background-position:center center;
+	position: relative;
+}
+
+/* Behind content - Home page */
+.home .uk-panel-box {
+	/* background-color: #000; 
+	color: #c1b9a1;	*/
+	color: #bab2b2;
+	width: 95%;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 9px;
+	margin-bottom: 8px;
+}
+
+/*------- Video embed --------*/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe, 
+.video-container object, 
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/**** Footer menu info ****/
+.uk-navbar-nav > li > a {
+    /* display: block; */
+    /* box-sizing: border-box; */
+    text-decoration: none;
+   
+    padding: 0 15px;
+    line-height: 40px;
+    color: #f99b1c;
+    font-size: 18px;
+    font-family: sans-serif, trebuchet ms, Verdana,;
+    font-weight: normal;
+}
+
+.tm-footer-menu .uk-navbar-nav .current-menu-item a{
+	color: #fff;
+}
+
+.uk-navbar-nav > li > a:hover {
+	color: #fff;
+	background-color: #665e5e;
+}
+
+
+
+/*-----------------------*/
+
+.uk-margin-bottom {
+    margin-bottom: 1px !important;
+}
+
+.tm-footer {
+	padding-top: 3px;
+	background-color: rgba(61, 56, 56, 0.85);
+	border-top: 2px solid #333;
+	height: 85px; /* Covers the footer menu and copyright info. */
+	z-index: 10;
+	text-align: center !important;
+	
+	/* Sticky Footer */
+	position: absolute;
+	bottom: 0;
+	width: 100%;		
+}
+
+.home .tm-footer {
+	/* background-color: rgba(0, 0, 0, 0.8); */
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#112056+0,2f3d54+100&0.8+0,0.8+100 */
+	background: -moz-linear-gradient(top, rgba(17,32,86,0.9) 0%, rgba(47,61,84,0.8) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(17,32,86,0.9) 0%,rgba(47,61,84,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(17,32,86,0.9) 0%,rgba(47,61,84,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc112056', endColorstr='#cc2f3d54',GradientType=0 ); /* IE6-9 */
+	
+	
+}
+
+/*------ Footer navbar -------*/
+/* Footer navbar */
+.tm-footer-menu .uk-navbar-nav {
+    display: inline-block;
+  	float: none;
+  	text-align: center;
+  	max-width: 90%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	height: 30px;
+}
+
+
+.tm-footer-menu a {
+	text-transform: none;
+	padding-left: 0;
+}
+
+
+/*--- Copyright area -----*/
+
+.tm-sub-footer {
+    color: #ccc;
+    font-size: 14px;
+    margin: 3px 0 0 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    clear: both;
+ }
+
+
+.tm-sub-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* A better control of the copyright area with this class. */
+.home .copyright-footer-full {  
+   margin: 0;
+   padding: 0;
+   max-width: 100%; /* Full width bar */
+}
+
+
+
+/* --------------- Widget locations ----------------*/
+
+.tm-below-header-widget-area,
+.tm-below-blogroll-widget-area,
+.tm-before-footer-widget-area,
+.tm-below-post-widget-area {
+	/* padding: 10px 10px 10px 40px;
+    background-color: yellow; */
+	color: #ccc;
+}
